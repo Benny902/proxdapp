@@ -7,6 +7,9 @@ import axios from 'axios';
 import { contractABI } from './contractABI';
 
 import './App.css';
+import logo from './proxgif.gif';
+import logo2 from './prox55.png';
+
 
 const smartContractAddress = '0x9d9fA9DbAe391C3FB6866F43De62FF3B393133b2';
 const xClubWalletAddress = '0x007a86bb3a8649590e84013dc62900632a8ec89f';
@@ -158,6 +161,9 @@ function App() {
   return (
     <div className="App">
       <div className='dashboard'>
+        <div>
+        <img src={logo} alt="Logo" width={200} height={50}/>
+        </div>
         <button
           onClick={() => connectWallet()}
           className="connect"
@@ -166,44 +172,36 @@ function App() {
         </button>
         <div>
           <p>Total Rewards Distributed:</p>
-          <p>{Number(totalRewardsDistributed / Math.pow(10, 18)).toFixed(2)} ETH</p>
-        </div>
-        <div>
-          <p>Total Rewards Distributed USD:</p>
-          <p>~$ {Number(totalRewardsDistributed / Math.pow(10, 18) * binancePegETHPrice).toFixed(2)}</p>
+          <p>{Number(totalRewardsDistributed / Math.pow(10, 18)).toFixed(2)} ETH 
+          {" ≈ $" + Number(totalRewardsDistributed / Math.pow(10, 18) * binancePegETHPrice).toFixed(2)}</p>
         </div>
         <div className='paragraph'></div>
         <div>
-          <p>Total Rewards Distributed To XClub Wallet:</p>
-          <p>{xClubWalletDividendsInfo ? Number(xClubWalletDividendsInfo[4] / Math.pow(10, 18)).toFixed(2) + " ETH" : ""}</p>
-        </div>
-        <div>
-          <p>Total Rewards Distributed To XClub Wallet USD:</p>
-          <p>{xClubWalletDividendsInfo ? "~$ " + Number(xClubWalletDividendsInfo[4] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}</p>
+        <p>Total Rewards Distributed To XClub Wallet:</p>
+          <p>{xClubWalletDividendsInfo ? Number(xClubWalletDividendsInfo[4] / Math.pow(10, 18)).toFixed(2) + " ETH" : ""}
+          {xClubWalletDividendsInfo ? " ≈ $" + Number(xClubWalletDividendsInfo[4] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}</p>
         </div>
         <div className='paragraph'></div>
         <div>
           <p>Total Rewards Distributed To User Wallet:</p>
-          <p>{userWalletDividendsInfo ? Number(userWalletDividendsInfo[4] / Math.pow(10, 18)).toFixed(2) + " ETH" : ""}</p>
-        </div>
-        <div>
-          <p>Total Rewards Distributed To User Wallet USD:</p>
-          <p>{userWalletDividendsInfo ? "~$ " + Number(userWalletDividendsInfo[4] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}</p>
+          <p>{userWalletDividendsInfo ? Number(userWalletDividendsInfo[4] / Math.pow(10, 18)).toFixed(2) + " ETH" : ""} 
+          {userWalletDividendsInfo ? " ≈ $" + Number(userWalletDividendsInfo[4] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}</p>
         </div>
         <div>
           <p>User Dividend Claimable:</p>
-          <p>{userWalletDividendsInfo ? Number(userWalletDividendsInfo[3] / Math.pow(10, 18)).toFixed(2) + " ETH" : ""}</p>
-        </div>
-        <div>
-          <p>User Dividend Claimable USD:</p>
-          <p>{userWalletDividendsInfo ? "~$ " + Number(userWalletDividendsInfo[3] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}</p>
+          <p>{userWalletDividendsInfo ? Number(userWalletDividendsInfo[3] / Math.pow(10, 18)).toFixed(2) + " ETH" : ""}
+          {userWalletDividendsInfo ? " ≈ $" + Number(userWalletDividendsInfo[3] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}</p>
         </div>
         <button
           onClick={() => claim()}
           className="claim"
         >
-          Claim {userWalletDividendsInfo ? "~$ " + Number(userWalletDividendsInfo[3] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}
+          Claim {userWalletDividendsInfo ? "≈$" + Number(userWalletDividendsInfo[3] / Math.pow(10, 18) * binancePegETHPrice).toFixed(2) : ""}
         </button>
+	<div className='paragraph'></div>
+        <div>
+        <img src={logo2} alt="Logo2" width={55} height={55}/>
+        </div>
       </div>
     </div>
   );
