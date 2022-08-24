@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/proxdapp/static/css/main.b8a18130.chunk.css",
-    "main.js": "/proxdapp/static/js/main.5811824f.chunk.js",
-    "main.js.map": "/proxdapp/static/js/main.5811824f.chunk.js.map",
+    "main.css": "/proxdapp/static/css/main.6f58445c.chunk.css",
+    "main.js": "/proxdapp/static/js/main.6b5129e1.chunk.js",
+    "main.js.map": "/proxdapp/static/js/main.6b5129e1.chunk.js.map",
     "runtime-main.js": "/proxdapp/static/js/runtime-main.b39ababa.js",
     "runtime-main.js.map": "/proxdapp/static/js/runtime-main.b39ababa.js.map",
-    "static/js/2.8e650002.chunk.js": "/proxdapp/static/js/2.8e650002.chunk.js",
-    "static/js/2.8e650002.chunk.js.map": "/proxdapp/static/js/2.8e650002.chunk.js.map",
+    "static/js/2.94398d69.chunk.js": "/proxdapp/static/js/2.94398d69.chunk.js",
+    "static/js/2.94398d69.chunk.js.map": "/proxdapp/static/js/2.94398d69.chunk.js.map",
     "static/js/3.60028db0.chunk.js": "/proxdapp/static/js/3.60028db0.chunk.js",
     "static/js/3.60028db0.chunk.js.map": "/proxdapp/static/js/3.60028db0.chunk.js.map",
     "index.html": "/proxdapp/index.html",
-    "static/css/main.b8a18130.chunk.css.map": "/proxdapp/static/css/main.b8a18130.chunk.css.map",
-    "static/js/2.8e650002.chunk.js.LICENSE.txt": "/proxdapp/static/js/2.8e650002.chunk.js.LICENSE.txt"
+    "static/css/main.6f58445c.chunk.css.map": "/proxdapp/static/css/main.6f58445c.chunk.css.map",
+    "static/js/2.94398d69.chunk.js.LICENSE.txt": "/proxdapp/static/js/2.94398d69.chunk.js.LICENSE.txt",
+    "static/media/proxgif.042a1faa.gif": "/proxdapp/static/media/proxgif.042a1faa.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.b39ababa.js",
-    "static/js/2.8e650002.chunk.js",
-    "static/css/main.b8a18130.chunk.css",
-    "static/js/main.5811824f.chunk.js"
+    "static/js/2.94398d69.chunk.js",
+    "static/css/main.6f58445c.chunk.css",
+    "static/js/main.6b5129e1.chunk.js"
   ]
 }
