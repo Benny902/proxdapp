@@ -3,11 +3,12 @@
   color: rgb(255, 255, 255);
   -webkit-text-stroke: 0.5px black;
   font-weight: bold;
-  width: 600px;
+  width: 500px;
   padding: 26px 20px;
   
   background-position: center;
   border-radius: 20px;
+  border-style: solid;
   border-color:#ff000088
 }
 
